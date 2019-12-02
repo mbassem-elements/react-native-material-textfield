@@ -79,7 +79,7 @@ export default class Label extends PureComponent {
         });
 
     let textStyle = {
-      lineHeight: fontSize,
+      lineHeight: fontSize + 5, //For supporting arabic inputs
       fontSize,
       color,
     };
