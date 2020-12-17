@@ -104,8 +104,8 @@ export default class TextField extends PureComponent {
     renderLeftAccessory: PropTypes.func,
     renderRightAccessory: PropTypes.func,
 
-    prefix: PropTypes.any,
-    suffix: PropTypes.any,
+    prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 
     containerStyle: (ViewPropTypes || View.propTypes).style,
     inputContainerStyle: (ViewPropTypes || View.propTypes).style,
